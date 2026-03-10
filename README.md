@@ -24,16 +24,6 @@ This is an **anonymized review repository** and some paths / environment-specifi
 repo/
 ├── README.md
 ├── requirements.txt
-├── dataset/
-│   ├── Base_Dataset/
-│   │   ├── Copy of Combined_OG_New_Gen.csv
-│   │   └── test.csv
-│   ├── Embeddings/
-│   │   └── wikileaks_embeddings_chunked.npy
-│   ├── Retriever/
-│   │   └── stage2_triplets_filtered.parquet
-│   ├── Re-Ranker/
-│   │   └── wikileaks_triplets_token_based_final.csv
 ├── src/
 │   ├── __init__.py
 │   ├── data_io.py
