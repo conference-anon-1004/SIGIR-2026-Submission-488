@@ -46,7 +46,7 @@ repo/
     └── 03_run_hybrid_eval.py
 ~~~
 
----
+
 
 ## 3) Dataset
 ## Dataset download and path configuration (IMPORTANT)
@@ -86,7 +86,7 @@ dataset/
 
 All paths are resolved relative to the repository root, not absolute machine paths and not Drive/Colab paths.
 
----
+
 
 ## 4) Paper-context summary 
 
@@ -109,7 +109,7 @@ In the paper, the downstream system is evaluated on a WikiLeaks diplomatic cable
 For reference, the paper reports a retrieval/reranking setup with `K=20` retrieval candidates, `M=5` reranked candidates, and a gating threshold `τ_g = 0.95`.
 
 
----
+
 
 ## 5) Environment and installation
 
@@ -128,7 +128,7 @@ pip install -r requirements.txt
 - If your environment uses GPU FAISS, you may replace it accordingly.
 - Embedding model weights (e.g., `BAAI/bge-m3``BAAI/bge-reranker-v2-m3`, `Qwen/Qwen2.5-7B-Instruct`) may be downloaded at runtime.
 
----
+
 
 ## 6) Expected input dataset format
 
@@ -162,7 +162,7 @@ contains `anchor_idx / positive_idx / negative_idx` indices that are assumed to 
 
 This filtering + reset is applied consistently in the provided scripts before training/evaluation.
 
----
+
 
 ## 7) How to run (3 steps)
 
@@ -200,7 +200,7 @@ Outputs:
 python scripts/03_run_hybrid_eval_qwen.py
 ~~~
 
----
+
 
 ## 8) Reproducibility notes
 
