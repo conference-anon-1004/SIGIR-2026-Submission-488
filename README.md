@@ -49,7 +49,7 @@ repo/
 
 
 ## 3) Dataset
-## Dataset download and path configuration (IMPORTANT)
+### Dataset download and path configuration (IMPORTANT)
 
 This repository follows a **minimal-modification policy** to preserve the original notebook logic while making the code runnable in a standard repo setting.  
 As a result, **all dataset files are referenced by fixed relative paths** under the repo root (i.e., no Google Drive/Colab paths are used in code).
