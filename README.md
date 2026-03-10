@@ -21,14 +21,27 @@ This is an **anonymized review repository** and some paths / environment-specifi
 repo/
 ├── README.md
 ├── requirements.txt
+├── dataset/
+│   ├── Base_Dataset/
+│   │   ├── Copy of Combined_OG_New_Gen.csv
+│   │   └── test.csv
+│   ├── Embeddings/
+│   │   └── wikileaks_embeddings_chunked.npy
+│   ├── Retriever/
+│   │   └── stage2_triplets_filtered.parquet
+│   ├── Re-Ranker/
+│   │   └── wikileaks_triplets_token_based_final.csv
 ├── src/
 │   ├── __init__.py
 │   ├── data_io.py
 │   ├── chunked_embedding.py
-│   ├── triplet_mining.py
-│   └── triplet_pipeline_v2.py
+│   ├── triplets.py
+│   ├── conrac_backbone.py
+│   └── conrac_se_hybrid.py
 └── scripts/
-    └── generate_triplets_v2.py
+    ├── 01_generate_triplets.py
+    ├── 02_train_reranker.py
+    └── 03_run_hybrid_eval.py
 ~~~
 
 ---
